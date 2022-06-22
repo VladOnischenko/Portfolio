@@ -1,11 +1,13 @@
-import React from  'react'
+// import React from  'react'
 
-const App = () => {
-  return (
-    <>
-      <h1>Sorry, I'm still working on portfolio</h1>
-    </>
-  );
-}
+// const App = (props) => {
+//   return (
+//     <>
+//       <div><input type="text" placeholder="First name"/></div>
+//       <div><input type="text" placeholder="Second name"/></div>
+//       <div />
+//     </>
+//   );
+// }
 
-export default App;
+// export default App;
