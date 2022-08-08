@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,*:before,*:after{
+    box-sizing: border-box;
+}
+
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    line-height: 1;
+    font-size: 14px;
+}
+
+input,button,textarea{font-family: inherit;}
+
+input::-ms-clear {display: none;}
+button {cursor: pointer;}
+button::-moz-focus-inner {padding: 0;border: 0;}
+a, a:visited {text-decoration: none;}
+a:hover {text-decoration: none;}
+ul li {list-style: none;}
+img {vertical-align: top;}
+h1, h2, h3, h4, h5, h6{font-size: inherit;font-weight: 400;}
+
+    $minWidth: 320px;
+    $maxWidth: 1070px;
+    $maxWidthContainer: 1100px;
+    $mainColor: #333333;
+    $fontFamily: 'Libre Franklin', sans-serif;
+    $fontSize: 20px;
+
+#root {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    color: $mainColor;
+    font-family: $fontFamily;
+    font-size: $fontSize;
+}
+
+.container {
+    max-width: $maxWidthContainer;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.page {}
