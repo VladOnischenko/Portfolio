@@ -1,0 +1,35 @@
+.skills {
+  background: #FFFAF2;
+  padding: 90px 0 120px 0;
+
+  &__img {
+    object-fit: contain;
+    & img {
+      width: 280px;
+      height: 360px;
+    }
+  }
+  // .skills__content
+  &__content {
+    display: flex;
+    margin: 0 30px;
+    justify-content: space-between;
+  }
+
+  // .skills__feature
+  &__feature {
+    max-width: 620px;
+    & > li {
+      display: flex;
+      gap: 20px;
+      justify-content: space-between;
+      & span {
+        display: flex;
+        align-items: center;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 25px;
+      }
+    }
+  }
+}
