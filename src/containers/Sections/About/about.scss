@@ -1,0 +1,36 @@
+.about {
+  margin: 90px 0 120px 0;
+
+  // .about__content
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 30px;
+  }
+
+  // .about__description
+  &__description {
+    font-size: 18px;
+    line-height: 30px;
+    text-align: justify;
+    & p {
+      max-width: 600px;
+      margin-bottom: 50px;
+    }
+  }
+
+  // .about__button
+  &__button {
+    padding: 8px 25px !important;
+    background: #F5D6AB  !important;
+    color: #fff !important;
+    font-size: 18px !important;
+    border-radius: 5px !important;
+    transition: all 0.2s linear !important;
+    &:hover {
+      background: #8B4136 !important;
+      color: #F5D6AB !important;
+    }
+  }
+
+}

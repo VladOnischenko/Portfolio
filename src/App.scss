@@ -58,3 +58,20 @@ body {
 }
 
 .page {}
+
+.title {
+    margin-bottom: 70px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #333333;
+}
+
+.main-img{
+    object-fit: cover;
+    & img {
+        border-radius: 10px;
+        width: 240px;
+        height: 300px;
+    }
+}
