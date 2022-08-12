@@ -13,7 +13,7 @@ const ThemeButton = () => {
             <div className="icons-box">
               <span className="switch-general night"><BsFillMoonFill /></span>
               <span className="switch-general sun"><BsFillSunFill />︎</span>
-              <span className="slider round"></span>
+              <span className="circle round"></span>
             </div>
           </label>
         </div>

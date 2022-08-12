@@ -2,20 +2,6 @@ span {
   font-size: 40px;
 }
 
-//.dark-mode {
-//  background-color: #1a1919;
-//  color: #ec0505;
-////  height: 100%;
-////  transition: background-color 0.25s ease-in-out;
-//}
-////
-//.light-mode {
-//  background-color: #fff;
-//  color: #01c001;
-////  height: 100%;
-////  transition: background-color 0.25s ease-in-out;
-//}
-
 .theme__wrapper {
   display: flex;
   justify-content: center;
@@ -33,7 +19,7 @@ span {
   height: 0;
 }
 
-.slider {
+.circle {
   position: absolute;
   cursor: pointer;
   top: 0;
@@ -44,7 +30,7 @@ span {
   transition: 0.4s;
 }
 
-.slider:before {
+.circle:before {
   position: absolute;
   content: "";
   height: 26px;
@@ -65,13 +51,13 @@ input:focus + .icons-box {
 
 
 
-.switch-input:checked + .icons-box > .slider:before {
+.switch-input:checked + .icons-box > .circle:before {
   transform: translateX(26px);
 }
 
 /* Rounded sliders */
 
-.slider.round:before {
+.circle.round:before {
   border-radius: 50%;
 }
 
