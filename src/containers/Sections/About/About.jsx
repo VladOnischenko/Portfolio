@@ -15,7 +15,7 @@ const About = () => {
               keep improving my skills.Ready to show my full devotion and involvement
               in a creative and motivated team.
             </p>
-            <Button className="about__button" href="https://www.linkedin.com/in/vladonischenko/overlay/1635494292398/single-media-viewer/" target="_blank">Download CV</Button>
+            <Button className="custom-button" href="https://www.linkedin.com/in/vladonischenko/overlay/1635499027635/single-media-viewer/" target="_blank">Download CV</Button>
           </div>
           <div className="main-img">
             <img src="../images/2.jpg" alt="myPhoto"/>
