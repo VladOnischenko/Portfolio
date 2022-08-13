@@ -1,7 +1,9 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import './progress.scss'
+import {ThemeProvider} from "../../App";
 
 const Progress = ({done}) => {
+  const theme = useContext(ThemeProvider)
   const [style, setStyle] = React.useState({});
 
   setTimeout(() => {
@@ -13,10 +15,8 @@ const Progress = ({done}) => {
   }, 200);
 
   return (
-    <div className="progress">
-      <div className="progress-done" style={style}>
-        {/*{done}%*/}
-      </div>
+    <div className={theme ? "progress" : "progress progress-dark"}>
+      <div className={theme ? "progress-done" : "progress-done done-dark"} style={style}></div>
     </div>
   )
 }

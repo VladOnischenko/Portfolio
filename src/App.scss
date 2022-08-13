@@ -88,3 +88,22 @@ body {
         color: #F5D6AB !important;
     }
 }
+
+.btn-dark {
+    background: #7395AE !important;
+    color: #fff !important;
+    box-shadow: 0 8px 12px #1d5d83 !important;
+    &:hover {
+        background: #B1A296 !important;
+        color: #fff !important;
+        box-shadow: 0 5px 10px #653a21 !important;
+    }
+}
+
+.dark {
+    background: rgba(97, 97, 98, 0.89);
+    color: #fff;
+    & > * h3 {
+        color: #fff;
+    }
+}
