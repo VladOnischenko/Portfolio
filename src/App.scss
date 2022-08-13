@@ -57,7 +57,6 @@ body {
     margin: 0 auto;
 }
 
-.page {}
 
 .title {
     margin-bottom: 70px;
@@ -73,5 +72,19 @@ body {
         border-radius: 10px;
         width: 240px;
         height: 300px;
+    }
+}
+
+.custom-button {
+    padding: 8px 25px !important;
+    background: #F5D6AB  !important;
+    color: #C66C49 !important;
+    font-size: 18px !important;
+    border-radius: 5px !important;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3) !important;
+    transition: all 0.2s linear !important;
+    &:hover {
+        background: #8B4136 !important;
+        color: #F5D6AB !important;
     }
 }
