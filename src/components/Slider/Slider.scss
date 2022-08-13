@@ -92,6 +92,7 @@
 .slider {
     height: 500px;
     padding: 15px;
+    background-color: #FFFAF2;
     position: relative;
     justify-content: flex-start;
     align-items: baseline;
@@ -166,6 +167,9 @@
   white-space: normal;
   font-size: 18px;
   line-height: 30px;
+  & p {
+    margin-bottom: 50px;
+  }
 }
 
 .slider__button {

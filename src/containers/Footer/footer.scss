@@ -1,0 +1,78 @@
+.footer {
+  background-color: #FFFAF2;
+  padding: 60px 0 40px 0;
+  // .footer__title
+  &__title {
+  }
+
+  // .footer__content
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+  }
+
+  // .footer__copyright
+  &__copyright {
+    display: flex;
+    align-content: center;
+    font-size: 15px;
+    line-height: 22px;
+    & span {
+      font-size: 15px;
+    }
+  }
+}
+
+.container {
+}
+
+.title {
+}
+
+.contacts {
+  display: flex;
+  & li {
+    &:hover {
+      & a {
+        background: none;
+      }
+    }
+    & a {
+      min-width: 100%;
+      font-size: 25px;
+      color: #000;
+    }
+  }
+  // .contacts__linkedIn
+  &__linkedIn {
+    & a svg{
+      fill: #1976d2;
+    }
+  }
+
+  // .contacts__Whatsapp
+  &__Whatsapp {
+    & a svg{
+      fill: #01c001;
+    }
+  }
+
+  // .contacts__Telegram
+  &__Telegram {
+    & a svg{
+      fill: #0194f1;
+    }
+  }
+
+  // .contacts__Github
+  &__Github {
+  }
+
+  &__Mail {
+    & a svg{
+      fill: rgb(255, 145, 0);
+    }
+  }
+}
