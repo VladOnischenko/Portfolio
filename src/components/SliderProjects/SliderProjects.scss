@@ -1,0 +1,157 @@
+.slider {
+    min-height: 500px;
+    padding: 15px;
+    background-color: #FFFAF2;
+    position: relative;
+    justify-content: flex-start;
+    align-items: baseline;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.slider:before {
+  z-index: -1;
+}
+
+.image-item {
+  width: 1000px;
+  height: 600px;
+  border-radius: 10px;
+}
+
+.right-arrow {
+  position: absolute;
+  bottom: 4%;
+  left: 90px;
+  font-size: 3rem;
+  color: #C66C49;
+  z-index: 3;
+  cursor: pointer;
+  user-select: none;
+  transform: translate(0, -50%)
+}
+
+.left-arrow {
+  position: absolute;
+  bottom: 4%;
+  left: 30px;
+  font-size: 3rem;
+  color: #C66C49;
+  z-index: 3;
+  cursor: pointer;
+  user-select: none;
+  transform: translate(0, -50%)
+}
+
+.left-arrow, .right-arrow {
+  transition: color .3s linear;
+  &:hover {
+    color: #6e361f;
+  }
+}
+
+.slider__content {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.slide {
+  opacity: 0;
+  transition: 1s ease;
+}
+
+.slide.active {
+  opacity: 1;
+  transition-duration: 1s;
+}
+
+.slider__box-images img{
+    max-width: 550px;
+    //height: 350px;  //TODO ---->>>>>
+    object-fit: cover;
+}
+
+.slider__title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 40px;
+}
+
+.slider__description {
+  max-width: 300px;
+  white-space: normal;
+  font-size: 18px;
+  line-height: 30px;
+  & p {
+    margin-bottom: 50px;
+  }
+}
+
+.slider__button {
+  font-size: 15px !important;
+
+}
+
+.slider-dark {
+  background-color: #b6b6b6;
+}
+
+@media (max-width: 820px) {
+  .slider{
+    &__description{
+      font-size: 16px;
+      line-height: 30px;
+      max-width: 500px;
+      & p {
+        margin-bottom: 20px;
+      }
+    }
+    &__content {
+      text-align: center;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  .right-arrow {
+    top: 10%;
+    left: 55%;
+    transform: translate(-50%, -50%)
+  }
+  .left-arrow {
+    top: 10%;
+    left: 45%;
+    transform: translate(-50%, -50%)
+  }
+}
+
+@media (max-width: 600px) {
+  .slider{
+    &__description{
+      font-size: 14px;
+      & p {
+        margin-bottom: 10px;
+      }
+    }
+    &__box-images { //TODO --->>>>> adaptive image
+      width: 100%;
+      height: 100%;
+      & img{
+        max-width: 100%;
+        //height: 350px;
+        object-fit: contain;
+      }
+    }        //TODO --->>>>> adaptive image
+  }
+  .right-arrow {
+    top: 10%;
+    left: 60%;
+    transform: translate(-50%, -50%)
+  }
+  .left-arrow {
+    top: 10%;
+    left: 40%;
+    transform: translate(-50%, -50%)
+  }
+}

@@ -1,5 +1,5 @@
 import React, {useContext, useState} from 'react';
-import './Slider.scss';
+import './SliderProjects.scss';
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa';
 import dataSlider from "./dataSlider";
 import {Button} from "@mui/material";
