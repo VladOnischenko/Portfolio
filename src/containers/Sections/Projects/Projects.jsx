@@ -4,7 +4,7 @@ import SliderProjects from "../../../components/Slider/SliderProjects";
 
 const Projects = () => {
   return (
-    <section className="projects">
+    <section id="projects" className="projects">
       <div className="container">
         <h3 className="projects__title title">Projects</h3>
         <div className="projects__content">

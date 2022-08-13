@@ -1,10 +1,12 @@
-import React, {useState} from 'react';
+import React, {useContext, useState} from 'react';
 import './Slider.scss';
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa';
 import dataSlider from "./dataSlider";
 import {Button} from "@mui/material";
+import {ThemeProvider} from "../../App";
 
 const SliderProjects = () => {
+  const theme = useContext(ThemeProvider)
 
   const [current, setCurrent] = useState(0);
   const length = dataSlider.length;
@@ -22,7 +24,7 @@ const SliderProjects = () => {
   }
 
   return (
-    <section className='slider'>
+    <section className={theme ? "slider" : "slider slider-dark"}>
       <FaArrowAltCircleLeft className='left-arrow' onClick={prevSlide} />
       <FaArrowAltCircleRight className='right-arrow' onClick={nextSlide} />
       {dataSlider.map((slide, index) => {

@@ -1,27 +1,33 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import './header.scss'
 import ThemeButton from "../../components/ThemeButton/ThemeButton";
+import {Button} from "@mui/material";
+import {ThemeProvider} from "../../App";
 
 const lightHeader = {
-  background: 'rgb(198, 108, 73, 0.3) url(../images/main-bg.jpg) no-repeat center center',
-  backgroundSize: "cover",
-  backgroundAttachment: "fixed",
+  background: ' url(../images/main-bg.jpg) center center / cover no-repeat fixed rgb(198, 108, 73, 0.3)',
 }
 
-const Header = () => {
+const darkHeader = {
+  background: ' url(../images/porto-night.jpeg) center center / cover no-repeat fixed rgb(198, 108, 73, 0.3)',
+}
+
+const Header = ({toggleTheme}) => {
+  const theme = useContext(ThemeProvider)
+
   return (
-    <header className="header" style={lightHeader}>
+    <header className="header" style={theme ? lightHeader : darkHeader}>
       <div className="container">
         <nav className="nav">
           <h4 className="nav__logo">Portfolio</h4>
           <div className="nav__themeMode">
-            <ThemeButton />
+            <ThemeButton toggleTheme={toggleTheme}/>
           </div>
         </nav>
         <div className="header__content">
           <h1 className="header__title">Hi, I'm <span>Vlad Onischenko</span></h1>
           <p className="header__subtitle">Front-end Developer from Urkaine</p>
-          <span className="header__link">Latest works</span>
+          <Button href="#projects" className="header__link">Latest works</Button>
         </div>
         <div className="center">
           <svg width="20" height="50" viewBox="0 0 50 130">

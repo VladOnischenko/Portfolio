@@ -1,14 +1,17 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import './footer.scss'
 import {AiFillLinkedin} from "react-icons/ai";
 import {FaTelegram} from "react-icons/fa";
 import {BsGithub, BsWhatsapp} from "react-icons/bs";
 import {Button} from "@mui/material";
 import {IoIosMail} from "react-icons/io";
+import {ThemeProvider} from "../../App";
 
 const Footer = () => {
+  const theme = useContext(ThemeProvider)
+
   return (
-    <footer className="footer">
+    <footer className={theme ? "footer" : "footer footer-dark"}>
       <div className="container">
         <h3 className="footer__title title">Get in Touch</h3>
         <nav className="footer__content">

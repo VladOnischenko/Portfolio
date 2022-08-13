@@ -1,10 +1,13 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import './skills.scss'
 import Progress from "../../../components/Progress/Progress";
+import {ThemeProvider} from "../../../App";
 
 const Skills = () => {
+  const theme = useContext(ThemeProvider)
+
   return (
-    <section className="skills">
+    <section className={theme ? "skills" : "skills skills-dark"}>
       <div className="container">
         <h3 className="skills__title title">Skills</h3>
         <div className="skills__content">

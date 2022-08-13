@@ -7,7 +7,9 @@
   color: #fff;
   position: relative;
   // .header__content
-  &__content {
+  &__content a{
+    color: #fff;
+    text-decoration: underline;
   }
 
   // .header__title
@@ -55,7 +57,7 @@
 
 .center{
   position: absolute;
-  bottom: 5%;
+  bottom: 0;
   left: 50%;
   transform: translate(-50%, -50%);
 }

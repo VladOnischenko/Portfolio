@@ -1,8 +1,11 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import './about.scss'
 import {Button} from "@mui/material";
+import {ThemeProvider} from "../../../App";
 
 const About = () => {
+  const theme = useContext(ThemeProvider)
+
   return (
     <section className="about">
       <div className="container">
@@ -15,7 +18,7 @@ const About = () => {
               keep improving my skills.Ready to show my full devotion and involvement
               in a creative and motivated team.
             </p>
-            <Button className="custom-button" href="https://www.linkedin.com/in/vladonischenko/overlay/1635499027635/single-media-viewer/" target="_blank">Download CV</Button>
+            <Button className={theme ? "custom-button" : "custom-button btn-dark"} href="https://www.linkedin.com/in/vladonischenko/overlay/1635499027635/single-media-viewer/" target="_blank">Download CV</Button>
           </div>
           <div className="main-img">
             <img src="../images/2.jpg" alt="myPhoto"/>
