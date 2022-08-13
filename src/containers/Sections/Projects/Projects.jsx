@@ -1,6 +1,6 @@
 import React from 'react';
 import './projects.scss';
-import SliderProjects from "../../../components/Slider/SliderProjects";
+import SliderProjects from "../../../components/SliderProjects/SliderProjects";
 
 const Projects = () => {
   return (

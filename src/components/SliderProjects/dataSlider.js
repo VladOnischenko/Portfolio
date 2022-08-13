@@ -12,6 +12,12 @@ const SliderData = [
     title: "THE HAM",
     subTitle: "THE HAM ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid architecto ducimus, incidunt laudantium nobis!",
     url: "https://vladonischenko.github.io/Programming-essentials-module/"
+  },
+  {
+    id: uuidv4(),
+    title: "Medical Cards",
+    subTitle: "Medical Cards ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid architecto ducimus, incidunt laudantium nobis!",
+    url: "https://vladonischenko.github.io/Medical-Cards/"
   }
 ];
 
