@@ -17,10 +17,10 @@ const Skills = () => {
           <ul className="skills__feature">
             <li><span>HTML</span><Progress done="90"/></li>
             <li><span>CSS</span><Progress done="85"/></li>
-            <li><span>React, React Hooks</span><Progress done="75"/></li>
-            <li><span>Redux, Redux thunk</span><Progress done="65"/></li>
+            <li><span>React</span><Progress done="75"/></li>
+            <li><span>Redux</span><Progress done="65"/></li>
             <li><span>JavaScript</span><Progress done="70"/></li>
-            <li><span>Node.js, MongoDB</span><Progress done="30"/></li>
+            <li><span>Node.js</span><Progress done="30"/></li>
           </ul>
         </div>
       </div>
