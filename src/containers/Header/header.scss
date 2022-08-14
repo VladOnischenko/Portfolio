@@ -1,18 +1,14 @@
-
-
 .header {
   height: 100vh;
   width: 100%;
   background-blend-mode: multiply;
   color: #fff;
   position: relative;
-  // .header__content
   &__content a{
     color: #fff;
     text-decoration: underline;
   }
 
-  // .header__title
   &__title {
     line-height: 78px;
     font-size: 4.9rem;
@@ -23,7 +19,6 @@
     }
   }
 
-  // .header__subtitle
   &__subtitle {
     line-height: 29px;
     font-size: 1.9rem;
@@ -37,9 +32,6 @@
   }
 }
 
-.container {
-}
-
 .nav {
   display: flex;
   justify-content: space-between;
@@ -50,7 +42,7 @@
     font-size: 1.9rem;
     font-weight: 700;
   }
-  // .nav___themeMode
+
   &__themeMode {
   }
 }
@@ -82,4 +74,40 @@
 70% {
   height: 110px
 }
+}
+
+@media (max-width: 480px) {
+  .header {
+
+    &__content a{
+      color: #fff;
+      text-decoration: underline;
+    }
+
+    &__title {
+      line-height: 78px;
+      font-size: 3.9rem;
+      margin-bottom: 26px;
+      & span {
+        font-weight: 700;
+        font-size: 3.9rem;
+      }
+    }
+
+    &__subtitle {
+      line-height: 29px;
+      font-size: 1.2rem;
+      margin-bottom: 120px;
+    }
+
+    &__link {
+      line-height: 22px;
+      text-decoration: underline;
+      font-size: 1rem;
+    }
+  }
+
+  .nav {
+    padding: 20px 0 140px 0;
+  }
 }
