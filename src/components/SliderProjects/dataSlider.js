@@ -17,7 +17,7 @@ const SliderData = [
   {
     id: uuidv4(),
     title: "Medical Cards",
-    subTitle: "The app helps easily create, edit and delete doctor appointment cards with the help of external API. Technologies: ES6 Classes (JS), Bootstrap5, SCSS, Gulp. Adaptive web design. (login: kate; password: kate2000)",
+    subTitle: "The app helps easily create, edit and delete doctor appointment cards with the help of external API. Technologies: ES6 Classes (JS), Bootstrap5, SCSS, Gulp. Adaptive web design. (login: kate; password: kate2002)",
     url: "https://vladonischenko.github.io/Medical-Cards/"
   }
 ];
