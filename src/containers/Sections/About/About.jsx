@@ -21,7 +21,7 @@ const About = () => {
             <Button className={theme ? "custom-button" : "custom-button btn-dark"} href="https://www.linkedin.com/in/vladonischenko/overlay/1635499027635/single-media-viewer/" target="_blank">Download CV</Button>
           </div>
           <div className="main-img">
-            <img src="../images/2.jpg" alt="myPhoto"/>
+            <img src="./images/2.jpg" alt="myPhoto"/>
           </div>
         </div>
       </div>
