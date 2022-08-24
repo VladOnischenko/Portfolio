@@ -5,11 +5,11 @@ import {Button} from "@mui/material";
 import {ThemeProvider} from "../../App";
 
 const lightHeader = {
-  background: ' url(./images/main-bg.jpg) center center / auto no-repeat fixed rgb(198, 108, 73, 0.3)',
+  background: ' url(./images/main-bg.jpg) center center / cover no-repeat fixed rgb(198, 108, 73, 0.3)',
 }
 
 const darkHeader = {
-  background: ' url(./images/porto-night.jpeg) center center / auto no-repeat fixed rgb(198, 108, 73, 0.3)',
+  background: ' url(./images/porto-night.jpeg) center center / cover no-repeat fixed rgb(198, 108, 73, 0.3)',
 }
 
 const Header = ({toggleTheme}) => {
